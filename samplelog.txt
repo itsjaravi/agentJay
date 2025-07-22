@@ -1,0 +1,66 @@
+2025-07-22 09:00:01,345 INFO  [UserService] User login successful: userId=101
+2025-07-22 09:00:02,452 WARN  [AuthService] JWT token expired, attempting refresh
+2025-07-22 09:00:03,123 ERROR [PaymentService] Failed to initialize payment gateway: TimeoutException
+2025-07-22 09:00:04,231 INFO  [OrderService] New order placed: orderId=9012
+2025-07-22 09:00:05,789 INFO  [InventoryService] Product 204 stock updated
+2025-07-22 09:00:06,890 WARN  [InventoryService] Product 204 low stock warning
+2025-07-22 09:00:07,091 INFO  [NotificationService] SMS sent to userId=101
+2025-07-22 09:00:08,202 ERROR [NotificationService] Email delivery failed to userId=101
+2025-07-22 09:00:09,313 INFO  [SystemMonitor] CPU usage: 72%
+2025-07-22 09:00:10,001 INFO  [SystemMonitor] Memory usage: 63%
+2025-07-22 09:00:11,190 WARN  [SystemMonitor] Disk usage high on /dev/sda1
+2025-07-22 09:00:12,310 INFO  [HealthCheck] System health: OK
+2025-07-22 09:00:13,420 INFO  [Scheduler] Background job executed: CleanupTask
+2025-07-22 09:00:14,530 ERROR [BackupService] Backup failed: PermissionDenied
+2025-07-22 09:00:15,640 INFO  [UserService] User logout: userId=101
+2025-07-22 09:00:16,751 INFO  [UserService] User login successful: userId=102
+2025-07-22 09:00:17,861 INFO  [OrderService] Order dispatched: orderId=9012
+2025-07-22 09:00:18,971 WARN  [ShippingService] Delayed delivery: orderId=9012
+2025-07-22 09:00:20,082 ERROR [ShippingService] Shipment tracking failed for orderId=9012
+2025-07-22 09:00:21,192 INFO  [ReportService] Generating daily metrics
+2025-07-22 09:00:22,302 INFO  [ReportService] Metrics generated: 120 entries
+2025-07-22 09:00:23,413 INFO  [UserService] Password reset requested: userId=102
+2025-07-22 09:00:24,523 INFO  [UserService] Password updated: userId=102
+2025-07-22 09:00:25,633 WARN  [Security] Multiple failed login attempts: IP=192.168.0.101
+2025-07-22 09:00:26,743 ERROR [Security] Account locked after 5 failed logins: userId=104
+2025-07-22 09:00:27,854 INFO  [AdminService] User unlocked: userId=104
+2025-07-22 09:00:28,964 INFO  [AuditLog] Action logged: LoginSuccess userId=105
+2025-07-22 09:00:30,074 INFO  [OrderService] Order placed: orderId=9013
+2025-07-22 09:00:31,184 INFO  [InventoryService] Reserved stock for productId=205
+2025-07-22 09:00:32,294 WARN  [InventoryService] Product 205 nearing out of stock
+2025-07-22 09:00:33,405 ERROR [PaymentService] Payment declined: InsufficientFunds
+2025-07-22 09:00:34,515 INFO  [SupportService] Ticket created: ticketId=2025
+2025-07-22 09:00:35,625 INFO  [SupportService] Ticket updated: status=InProgress
+2025-07-22 09:00:36,735 WARN  [SupportService] SLA breach risk for ticketId=2025
+2025-07-22 09:00:37,846 ERROR [SupportService] Failed to assign agent to ticketId=2025
+2025-07-22 09:00:38,956 INFO  [Scheduler] Nightly sync started
+2025-07-22 09:00:40,066 INFO  [SyncService] Pulling data from external system A
+2025-07-22 09:00:41,176 ERROR [SyncService] API fetch failed: 504 Gateway Timeout
+2025-07-22 09:00:42,287 INFO  [SyncService] Retrying sync in 60 seconds
+2025-07-22 09:00:43,397 WARN  [SyncService] Retry attempt 1 failed
+2025-07-22 09:00:44,507 WARN  [SyncService] Retry attempt 2 failed
+2025-07-22 09:00:45,617 INFO  [SyncService] Retry attempt 3 succeeded
+2025-07-22 09:00:46,728 INFO  [BillingService] Invoice generated: invoiceId=501
+2025-07-22 09:00:47,838 ERROR [BillingService] Failed to send invoice email: SMTPError
+2025-07-22 09:00:48,948 INFO  [AdminService] Created new user: userId=106
+2025-07-22 09:00:50,058 INFO  [AdminService] Assigned role: Admin to userId=106
+2025-07-22 09:00:51,168 WARN  [AdminService] UserId=106 attempted restricted operation
+2025-07-22 09:00:52,279 INFO  [AuditLog] Action logged: RoleChange userId=106
+2025-07-22 09:00:53,389 INFO  [OrderService] Order completed: orderId=9013
+2025-07-22 09:00:54,499 ERROR [NotificationService] Push notification failed: DeviceTokenInvalid
+2025-07-22 09:00:55,610 INFO  [Scheduler] Task completed: CleanupCache
+2025-07-22 09:00:56,720 INFO  [UserService] Session extended: userId=105
+2025-07-22 09:00:57,830 WARN  [SessionService] Session idle too long: userId=105
+2025-07-22 09:00:58,941 ERROR [SessionService] Session expired: userId=105
+2025-07-22 09:01:00,051 INFO  [LoginService] Re-login attempt: userId=105
+2025-07-22 09:01:01,161 INFO  [LoginService] Login successful: userId=105
+2025-07-22 09:01:02,271 INFO  [SystemMonitor] CPU usage: 85%
+2025-07-22 09:01:03,382 WARN  [SystemMonitor] High memory consumption detected
+2025-07-22 09:01:04,492 ERROR [SystemMonitor] Out of memory: JVM heap exhausted
+2025-07-22 09:01:05,602 INFO  [RecoveryService] Memory cleanup initiated
+2025-07-22 09:01:06,713 INFO  [RecoveryService] GC completed, heap usage normalized
+2025-07-22 09:01:07,823 INFO  [HealthCheck] All services operational
+2025-07-22 09:01:08,933 WARN  [HealthCheck] Degraded performance detected in PaymentService
+2025-07-22 09:01:10,044 ERROR [PaymentService] DB pool exhausted: Too many connections
+2025-07-22 09:01:11,154 INFO  [AdminService] Connection pool size increased
+2025-07-22 09:01:12,264 INFO  [Scheduler] Job completed: LogRotateTask
